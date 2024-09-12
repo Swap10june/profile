@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1500px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+            margin: 0;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #007BFF;
+        }
+        .header h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 5px 0;
+            color: #555;
+            font-size: 1em;
+        }
+        .section {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .section p {
+            margin: 10px 0;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .skills ul li {
+            background-color: #e9ecef;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .experience table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .experience th, .experience td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .experience th {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: left;
+        }
+        .experience td {
+            background-color: #f9f9f9;
+            vertical-align: top;
+        }
+        .table-container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: #ffffff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+	<script>
+		window.onload = function calculateYears() {
+      const inputDate = new Date("2022-11-10");
+      const today = new Date();
+
+      let years = today.getFullYear() - inputDate.getFullYear();
+      let months = today.getMonth() - inputDate.getMonth();
+
+      if (months < 0 || (months === 0 && today.getDate() < inputDate.getDate())) {
+        years--;
+        months += 12;
+      }
+      if (today.getDate() < inputDate.getDate()) {
+        months--;
+      }
+      document.getElementById("result").innerText = 
+        `${years} yr ${months} months`;
+    };
+	</script>
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="Profile Picture">
+            <h1>Swapnil Ganpat Jagadale</h1>
+            <p>Email: swap10june@gmail.com | Phone: +49 15906767082 | What's App: +91 9665929145</p>
+            <a href="https://linkedin.com/in/swapnil-ganpat-jagadale"><i class="fa fa-linkedin"> linkedin.com/in/swapnil-ganpat-jagadale</i></a>
+			<a href="https://github.com/Swap10june"><i class="fa fa-github"> github.com/Swap10june</i></a>
+			<p>Address: Laagbergstrasse 73, 38440 Wolfsburg, Germany</p>
+        </div>
+
+        <div class="section summary">
+			<h2>About</h2>
+			<p>Experienced software developer with a passion for delivering innovative solutions through technology. With a strong background in Java development, UI frameworks, and API integrations, I thrive in creating efficient, scalable systems that drive business success. I am skilled in working with complex models, data binding, and designing robust software architectures.
+			
+			</br>I enjoy continuous learning and take pride in sharing knowledge, demonstrated through my involvement in training and mentoring others. Driven by curiosity and a commitment to excellence, I aim to bring value to every project I contribute to.</p>
+            <h2>Professional Summary</h2>
+            <p>
+				<ul>
+					<li>9+ years of extensive experience in all the key Functional and Technical aspects of PLM Domain</li>
+					<li>Very good understanding RAC, BMIDE and ITK concepts in Teamcenter</li>
+					<li>In depth understanding of the JAVA language, with hands-on experience with Teamcenter</li>
+					<ul>
+						<li>Teamcenter Unified</li>
+						<li>TC Basics and Installation</li>
+						<li>Structure Manager</li>
+						<li>4GD</li>
+						<li>TC Organization</li>
+						<li>Workflow Designer</li>
+						<li>Query Builder</li>
+						<li>Server (ITK) and Client Customization</li>
+						<li>BMIDE Configurations</li>
+					</ul>
+					<li>Excellent team player with great communication and collaborative skills</li>
+					<li>Good development, maintenance and analytical knowledge of Core Java</li>
+			   </ul>
+		</p>
+        </div>
+
+        <div class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>PLM Products: Teamcenter, ITK, SOA, BMIDE, TCRA</li>
+                <li>Programming:  Java, CPP, HTML, Batch and Shell Scripting , JUnit, Mockito, RCP Plugins</li>
+                <li>Database: Oracle, SQL, SQLite</li>
+                <li>UI Framework: Standard Widget Toolkit (SWT), JFace, Nattable</li>
+                <li>Tools: Eclipse, Visual Studio, SVN</li>
+                <li>HashiCorp Vault</li>
+            </ul>
+        </div>
+
+        <div class="section experience">
+            <h2>Work Experience</h2>
+            <table>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Company</th>
+                    <th>Dates</th>
+					<th>Client</th>
+                    <th>Responsibilities</th>
+                </tr>
+                <tr>
+                    <td>Senior Software Developer</td>
+                    <td>Intelizign Engineering Services Gmbh</br>Wolfsburg, Germany</td>
+                    <td>Nov 2022 to Till Today</br><strong id="result"></strong></td>
+					<td>Volkswagen</td>
+                    <td>
+                        <ul>
+                            <li>Design and Development of Joining concepts through PRU, PRI, PRA objects.</li>
+                            <li>Specification, Design and Development of RAC application to achieve the joining concepts functionalities.</li>
+                            <li>Work with Sprints environment.</li>
+                            <li>Developing RAC RCP concepts.</li>
+                            <li>Taking care of Coding Standards.</li>
+                            <li>Multiple Code Review.</li>
+                            <li>Provide quality solutions by using TDD approach.</li>
+							<li>Integrated the new tool HashiCorp Vault to remove passwords used as a plain text to achieve the security while implementing CICD</li>
+                            <li>Script writing to support/communicate with HashiCorp Vault. </li>
+                            <li>Wrote multiple consumers for HashiCorp Vault like Java ant, C++, Perl etc.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lead Software Engineer</td>
+                    <td>Intelizign Engineering Services</br>Pune, Maharashtra, India</td>
+                    <td>Feb 2021  to Nov 2022</br><strong>1 yr 10 months</strong></td>
+					<td>Volkswagen</td>
+                    <td>
+                        <ul>
+                            <li>Design and Development of Teamcenter loose service API’s.</li>
+                            <li>Specification, Design and Development of loose binding Teamcenter services which can work with RAC as well as Standalone applications</li>
+                            <li>Refactoring RAC RCP plug-in Project</li>
+                            <li>Developing RAC Connect API’s</li>
+                            <li>Developing RAC UI Connect API’s</li>
+                            <li>Working with Maven Projects, P2 Sites to generate plug-ins to work with TC RAC.</li>
+                            <li>Provide quality solutions by using TDD approach.</li>
+							<li>Writing JUnits using Mockito for Implementation to provide quality code</li>
+                        </ul>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Senior Software Engineer</td>
+                    <td>eQ Technologic.</br>Pune, Maharashtra, India</td>
+                    <td>Dec 2019 to Feb 2021</br><strong>1 yr 3 months</strong></td>
+					<td>eQ Technologic</td>
+                    <td>
+                        <ul>
+                            <li>Develop and ITK to read and write data into Teamcenter</li>
+							<li>Build and compile BMIDE projects</li>
+							<li>Build and compile BMIDE projects</li>
+							<li>Delivering quality solutions</li>
+							<li>Build BMIDE SOA projects for multiple different operating system</li>
+                        </ul>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Software Engineer</td>
+                    <td>Intelizign Engineering Services Private Ltd</br>Pune, Maharashtra, India</td>
+                    <td>Aug 2016 to Dec 2019</br><strong>3 yrs 5 months</strong></td>
+					<td>Volkswagen, IEC, RR</td>
+                    <td>
+                        <ul>
+                            <li>Design and Development of Teamcenter SOA data type</li>
+							<li>Design and Development of Teamcenter SOA using Teamcenter ITK’s</li>
+							<li>Managing Server and Client-Side communications using SOA</li>
+							<li>Design and Development of server API’s using Teamcenter ITK and POMEnquiry</li>
+							<li>Design and Development of RAC Perspectives, Views, Dialogs etc. in SWT, JFace</li>
+							<li>Maintaining SVN Repository sync across the all the sites with new enhancement and    development</li>
+							<li>Writing JUnits using Mockito for Implementation to provide quality code</li>
+                        </ul>
+                    </td>
+                </tr>
+				<tr>
+                    <td>Software Intern</td>
+                    <td>Siemens Industry Software Private Ltd.</br>Pune, Maharashtra, India</td>
+                    <td>Feb 2015 to Aug 2016</br><strong>1 yr 7 months</strong></td>
+					<td>Siemens</td>
+                    <td>
+                        <ul>
+                            <li>Installation of Teamcenter and Patch configuration</li>
+							<li>Writing JUnits</li>
+							<li>Writing SWTBOTs to test 4GD Teamcenter UI</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-container">
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Examination</th>
+                    <th>University / Board</th>
+                    <th>% Marks / CGPA</th>
+                    <th>Year of Passing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PG-DAC</td>
+                    <td>CDAC</td>
+                    <td>73%</td>
+                    <td>Aug 2014</td>
+                </tr>
+                <tr>
+                    <td>BE</td>
+                    <td>Pune University</td>
+                    <td>63%</td>
+                    <td>June 2013</td>
+                </tr>
+				<tr>
+                    <td>HSC</td>
+                    <td>Maharashtra State Board</td>
+                    <td>77%</td>
+                    <td>June 2009</td>
+                </tr>
+				<tr>
+                    <td>SSC</td>
+                    <td>Maharashtra State Board</td>
+                    <td>83.07%</td>
+                    <td>June 2007</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Swapnil Ganpat Jagadale. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
